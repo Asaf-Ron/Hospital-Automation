@@ -23,6 +23,8 @@ def test_smoke(hospital_url):
 
     expect(hospital_url.locator("#dataContainer")).to_be_visible()
     expect(hospital_url).to_have_url("https://qahackeru3.netlify.app/")
+
+    dashboard_page.logout()
     time.sleep(3)
 
     
